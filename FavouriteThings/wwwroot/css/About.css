@@ -1,0 +1,82 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.musicCard,
+.gamesCard,
+.moviesCard {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .musicCard:hover,
+    .gamesCard:hover,
+    .moviesCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+.musicPicture,
+.gamesPicture,
+.moviesPicture {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+}
+.cardName {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.musicDescription,
+.gameDescription,
+.movieDescription {
+    font-size: 1.05rem;
+    color: #6c757d;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-style: italic;
+}
+
+.btnPrimary {
+    display: inline-block;
+    background-color: #F08080;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btnPrimary:hover {
+        background-color: #CD5C5C;
+        color: #ffffff;
+        text-decoration: none;
+        transform: scale(1.05);
+    }

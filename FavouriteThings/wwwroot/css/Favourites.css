@@ -1,0 +1,103 @@
+﻿
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.infoCard {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 650px;
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .infoCard:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    }
+
+.imagesBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.pictures {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+    .pictures:hover {
+        transform: scale(1.08);
+    }
+.cardDesc {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+.info {
+    margin-bottom: 35px;
+}
+
+    .info ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info li {
+        font-size: 1.1rem;
+        color: #6c757d;
+        padding: 10px 0;
+        border-bottom: 1px solid #f1f1f1;
+        transition: color 0.2s ease;
+    }
+
+        .info li:last-child {
+            border-bottom: none;
+        }
+
+        .info li:hover {
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+.btnPrimary {
+    display: inline-block;
+    background-color: #F08080;
+    color: #ffffff;
+    padding: 12px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btnPrimary:hover {
+        background-color: #CD5C5C;
+        color: #ffffff;
+        transform: scale(1.05);
+    }
